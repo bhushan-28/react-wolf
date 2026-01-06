@@ -8,12 +8,12 @@ function App() {
     <>
   <main>
     <div className="images">
-      <img id='tommorowland' src='/tommorowland.png'/>
-      <img id='navy-pier' src='/navy-pier.png'/>
-      <img id='msi-chicago' src='/msi-chicago.png'/>
-      <img id='phone' src='/phone.png'/>
-      <img id='kikk' src='/kikk.png'/>
-      <img id='kennedy' src='/kennedy.png'/>
+      <img id='tommorowland' src='tommorowland.png'/>
+      <img id='navy-pier' src='navy-pier.png'/>
+      <img id='msi-chicago' src='msi-chicago.png'/>
+      <img id='phone' src='phone.png'/>
+      <img id='kikk' src='kikk.png'/>
+      <img id='kennedy' src='kennedy.png'/>
       <img id='opera' src='opera.png'/>
     </div>
      <Canvas 
