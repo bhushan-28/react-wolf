@@ -286,77 +286,113 @@ main:has(#section-2 .title[img-title="opera"]:hover) .images #opera{
 
 @media (max-width: 576px) {
 
-  /* GLOBAL */
+  /* ===== GLOBAL RESET ===== */
+  * {
+    box-sizing: border-box;
+  }
+
   body {
     overflow-x: hidden;
+    font-size: 14px;
   }
 
   main {
     width: 100%;
+    overflow-x: hidden;
   }
 
-  /* NAVBAR */
+  /* ===== NAVBAR ===== */
   nav {
-    padding: 1rem;
+    padding: 0.8rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav .nav-elem {
+    display: flex;
+    align-items: center;
   }
 
   nav .nav-elem svg {
-    width: 120px;
-    max-width: 5rem;
-  
-
+    width: 70px;       /* Perfect mobile size */
+    height: auto;
+    max-width: 100%;
+    display: block;
   }
 
   nav .nav-elem:nth-child(2) {
-    display: none; /* hide "Our Show Reel" */
+    display: none; /* Hide "Our Show Reel" */
   }
 
-  /* HERO TEXT */
+  /* ===== HERO SECTION ===== */
   .middle {
     flex-direction: column;
-    padding: 2rem 1rem;
+    align-items: flex-start;
+    padding: 2.5rem 1rem;
+    gap: 1rem;
   }
 
   .middle .left h1 {
-    font-size: 3rem;
-    line-height: 1;
+    font-size: 2.2rem;
+    line-height: 1.1;
+    word-break: break-word;
+  }
+
+  .middle .left p {
+    font-size: 0.95rem;
+    margin-top: 0.8rem;
+    max-width: 100%;
   }
 
   .middle .right {
     display: none;
   }
 
-  /* BOTTOM TEXT */
+  /* ===== BOTTOM SECTION ===== */
   .bottom {
     flex-direction: column;
-    padding: 1rem;
+    padding: 1.2rem 1rem;
+    gap: 0.6rem;
+  }
+
+  .bottom .left,
+  .bottom .right {
+    width: 100%;
   }
 
   .bottom .right p {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    line-height: 1.4;
   }
 
-  /* TITLES SECTION */
+  /* ===== TITLES / SECTION 2 ===== */
   #section-2 .titles {
     padding: 2rem 1rem;
   }
 
+  .title {
+    margin-bottom: 1rem;
+  }
+
   .title h1 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    line-height: 1.3;
   }
 
-  /* IMAGES FLOATING */
-  .images img {
-    width: 180px;
-    opacity: 0.5;
+  /* ===== FLOATING IMAGES ===== */
+  .images {
+    display: none; /* Best UX: hide floating images on mobile */
   }
 
-  /* CANVAS */
+  /* ===== CANVAS / 3D ===== */
   #canvas-elem {
-    height: 100vh;
     width: 100vw;
+    height: 70vh;
   }
+
 }
+
 
 
 @media (max-width: 992px) {

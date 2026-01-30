@@ -12,7 +12,7 @@ const Wolf = () => {
     gsap.registerPlugin(useGSAP)
     gsap.registerPlugin(ScrollTrigger);
 
- const model = useGLTF("/models/dog.drc.glb")
+ const model = useGLTF(`${import.meta.env.BASE_URL}models/dog.drc.glb`)
  useThree(({camera,scene,gl})=>{
     camera.position.z=0.55
     gl.toneMapping=THREE.ReinhardToneMapping
